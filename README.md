@@ -16,11 +16,36 @@ composer require google/apiclient:^2
 ```
 codeigniter/
 ├── application/
+│	└── views/
+│   	└── themes/
+│       	└── metronic/
+│  				├── base_view.php
+│  				├── base_view_login.php
+│  				├── base_view_dashboardv0.php //ini asset metronic dashboard full
+│   			├── sidebar.php
+│   			├── header.php
+│   			├── footer.php
+│   			├── component/
+│				│	├── brand.php
+│ 				│	├── subheader.php
+│				│	├── content-grid.php
+│				│	└── semua_file_dalam_dashboard_terpisah_disini.php
+│				└── layout/
+│   				├── _dashboard_full.php //layout dashboard full semua komponen
+│   				├── dashboardv0.php //layout dashboard kosong tanpa komponen
+│					└── login.php //layout login
 ├── composer.json
 ├── composer.lock
 ├── public/
 │   ├── .htaccess
-│   └── index.php
+│   ├── index.php
+│   ├── .env.php
+│	└── assets/
+│  		├── images/
+│   	├── js/
+│  		├── images/
+│   	└── themes/
+│       	└── metronic/
 └── vendor/
     └── codeigniter/
         └── framework/
